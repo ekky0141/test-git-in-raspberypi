@@ -7,7 +7,7 @@ font = cv.FONT_HERSHEY_SIMPLEX
 text = 'Mtt'
 cv.putText(img,text,(int(w/2),int(h/2)),font,0.5,(0,0,255),2)
 cv.putText(img,'Kmutnb',(100,50),font,1,(255,0,0),2)
-cv.imshow('jhjjj',img)
+#cv.imshow('jhjjj',img)
 
 
 
@@ -30,11 +30,18 @@ cv.line(img,p0,p1,(255, 0, 255),2)
 p2=int(w/2),int(h/2)
 p3=int(w/2)+50,int(h/2)+50
 cv.rectangle(img,p2,p3,(255, 0, 25),cv.FILLED)
-cv.imshow('before',img)
+#cv.imshow('before',img)
 cv.imshow('after',img)
     
 while(True):   
     k=cv.waitKey(0)
+   
+   
+   
+   
+   
+   
+   
     if k == ord('q'):
         break
     
