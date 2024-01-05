@@ -1,5 +1,6 @@
 import cv2 as cv
 import numpy as np;
+import time
 img = cv.imread('football.jpg')
 h,w,c=img.shape
 font = cv.FONT_HERSHEY_SIMPLEX
@@ -29,7 +30,7 @@ cv.rectangle(img,p2,p3,(255, 0, 25),cv.FILLED)
 cv.imshow('after',img)
     
 while(True):   
-    k=cv.waitKey(0)
+    k=cv.waitKey(1)
     if k == ord('q'):
         break
     
@@ -39,7 +40,12 @@ while(True):
       
     elif k == ord('h'):
         img = cv.flip(img,0) 
-       
+    digit = digit+1
+    print(digit)
+    img = cv.imread("football.jpg")
+    text="data = "+str(digit)
+    cv.putText(img,text,(50,int(h/2)),font,1,(0,0,255),2)
+    time.sleep(0.2)   
     
     cv.imshow('after',img)
     # cv.imwrite('test.jpg',img)
