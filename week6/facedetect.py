@@ -12,12 +12,12 @@ image = cv2.imread(imagePath)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 cv2.imshow("Mtt colour", image)
-cv2.imshow("Mtt gray", gray)
+#cv2.imshow("Mtt gray", gray)
 
 
 
 faceCascade = cv2.CascadeClassifier(cascPath)
-faces = faceCascade.detectMultiScale(gray)
+faces = faceCascade.detectMultiScale(image)
 
 
 for (x, y, w, h) in faces:

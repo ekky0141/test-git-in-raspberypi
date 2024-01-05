@@ -7,7 +7,7 @@ font = cv.FONT_HERSHEY_SIMPLEX
 if not cap.isOpened():
     print("Cannot open camera")
     exit()
-
+    
 digit =0    
 while True:
     # Capture frame-by-frame

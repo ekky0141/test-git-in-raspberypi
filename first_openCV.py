@@ -4,7 +4,7 @@ import time
 
 font = cv.FONT_HERSHEY_SIMPLEX
 
-img = cv.imread('cat.jpg')
+img = cv.imread('football.jpg')
 h,w,c = img.shape
 print(h)
 print(w)
